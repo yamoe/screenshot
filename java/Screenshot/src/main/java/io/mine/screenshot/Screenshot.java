@@ -175,18 +175,5 @@ public class Screenshot {
 	public String mimetype() {
 		return Screenshot.mimetype;
 	}
-	
-/*
-    public void showFile() {
-        return send_file(self.io(), mimetype=self.mimetype());
-    }
-    
-    publid void downloadFile(Stringi filename) {
-        """browser 에서 바로 다운로드"""
-        return send_file(self.io(), mimetype=self.mimetype(),
-            as_attachment=True, attachment_filename=filename);
-    }
-*/
-
 
 }
