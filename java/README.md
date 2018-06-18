@@ -15,20 +15,21 @@
 
 ### CentOS 7
 
-* yum -y install epel-release
+* sudo yum -y install epel-release
 
-* yum -y install chromedriver chromium xorg-x11-server-Xvfb
+* sudo yum -y install java chromedriver chromium
+
+* sudo yum -y install baekmuk-ttf-dotum-fonts
+
+    http://naver.com/ 캡쳐시 한글 깨지므로 돋움 font 
+
+* 테스트한 버전
 
     ChromeDriver 2.35 (0)
 
     Chromium 65.0.3325.181 Fedora Project
-
-    xorg-x11-server-Xvfb-1.19.5-5.el7.x86_64
-
-* 캡쳐화면의 한글이 깨지는 경우 폰트 설치 필요
-
-    yum -y install fonts-nanum-coding
-
+    
+    (xorg-x11-server-Xvfb 없이도 정상동작하여 pass)
 
 ## Run
 
