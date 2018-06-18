@@ -15,7 +15,9 @@
 
 ### CentOS 7
 
-* yum install chromedriver chromium xorg-x11-server-Xvfb
+* yum -y install epel-release
+
+* yum -y install chromedriver chromium xorg-x11-server-Xvfb
 
     ChromeDriver 2.35 (0)
 
@@ -25,7 +27,7 @@
 
 * 캡쳐화면의 한글이 깨지는 경우 폰트 설치 필요
 
-    yum install -y fonts-nanum-coding
+    yum -y install fonts-nanum-coding
 
 
 ## Run
