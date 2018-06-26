@@ -1,0 +1,6 @@
+.vscode
+vendor
+bin
+pkg
+src/*
+!src/newera
