@@ -48,6 +48,7 @@ type ScreenshotParam struct {
 	Javascript  string
 	Cookies     []*http.Cookie
 	Filepath    string
+	ChromePort int
 }
 
 // Screenshot capture web page
@@ -58,7 +59,7 @@ type Screenshot struct {
 }
 
 // Init it init. need "defer Uninit()"
-func (s *Screenshot) Init(timeout int, debug bool) error {
+func (s *Screenshot) Init(timeout int, debug bool, port int) error {
 	timeoutSec := time.Duration(timeout) * time.Second
 	ctxt, cancel := context.WithTimeout(context.Background(), timeoutSec)
 
@@ -75,6 +76,7 @@ func (s *Screenshot) Init(timeout int, debug bool) error {
 			runner.Flag("hide-scrollbars", true),
 			runner.Flag("no-first-run", true),
 			runner.Flag("no-default-browser-check", true),
+			runner.Flag("remote-debugging-port", port),
 		),
 		chromedp.WithLog(logFunc),
 	)
@@ -95,7 +97,7 @@ func (s *Screenshot) Uninit() {
 	if s.cdp != nil {
 		s.cdp.Shutdown(s.ctxt)
 		s.cancel()
-
+		s.cdp.Wait()
 		s.cdp = nil
 	}
 }
@@ -246,7 +248,7 @@ func (s *Screenshot) runjs(js string) error {
 func RunScreenshot(p *ScreenshotParam) error {
 
 	ss := new(Screenshot)
-	if err := ss.Init(p.Timeout, p.Debug); err != nil {
+	if err := ss.Init(p.Timeout, p.Debug, p.ChromePort); err != nil {
 		return err
 	}
 	defer ss.Uninit()

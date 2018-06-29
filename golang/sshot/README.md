@@ -24,18 +24,20 @@ chrome 설치
     $ ./sshot -h
     Options:
 
-    -h, --help            display help information
-    -r, --url            *web url
+    -h, --help                   display help information
+    -v, --version                print version
+    -r, --url                   *web url
     -f, --filepath[=sshot.png]   png filepath for save
-    -w, --width[=0]       web width
-    -s, --waitsec[=0]     wait seconds(sleep)
-    -v, --waitvisible     wait visible css
-    -j, --javascript      execute javascript
-    -t, --timeout[=120]   timeout
-    -l, --loginurl        login url
-    -u, --username        username
-    -p, --password        password
-    -d, --debug[=false]   print debug log
+    -w, --width[=0]              web width
+    -s, --waitsec[=0]            wait seconds(sleep)
+    -i, --waitvisible            wait visible css
+    -j, --javascript             execute javascript
+    -t, --timeout[=120]          timeout
+    -l, --loginurl               login url
+    -u, --username               username
+    -p, --password               password
+    -d, --debug[=false]          print debug log
+    -o, --port[=9222]            chrome remote debugging port
     ```
 
 * screenshot - naver.com 
