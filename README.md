@@ -6,10 +6,9 @@ chrome webdriver 사용
 
 아래 경로의 문서를 참조하세요
 
-* java/README.md
-* golang/sshot/README.md
-* js/README.md
-
+* [java/README.md](https://github.com/yamoe/screenshot-example/tree/master/java)
+* [golang/sshot/README.md](https://github.com/yamoe/screenshot-example/tree/master/java)
+* [js/README.md](https://github.com/yamoe/screenshot-example/tree/master/js)
 
 ## 그 외
 
