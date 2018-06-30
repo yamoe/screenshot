@@ -1,10 +1,7 @@
 # Screenshot
 
-selenium 을 사용한 web page screenshot 예제
-
-chrome webdriver 사용
-
-아래 경로의 문서를 참조하세요
+web page 스크린샷 예제
+(selenium, chrome dev tool, html2canvas, ...)
 
 * [java/README.md](https://github.com/yamoe/screenshot-example/tree/master/java)
 * [golang/sshot/README.md](https://github.com/yamoe/screenshot-example/tree/master/java)
@@ -12,7 +9,7 @@ chrome webdriver 사용
 
 ## 그 외
 
-### chrome 특정 element 캡쳐 뜨기
+### chrome 특정 element 캡쳐
 
 <https://umaar.com/dev-tips/156-element-screenshot/>
 
@@ -20,6 +17,6 @@ chrome webdriver 사용
 1. ctrl + shift + p 후 에 ">Capture node screenshot" 선택
 1. png 파일 다운로드됨.
 
-### chrome extension 설치
+### chrome extension
 
 <https://github.com/mrcoles/full-page-screen-capture-chrome-extension>
