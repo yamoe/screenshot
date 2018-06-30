@@ -3,9 +3,9 @@
 web page 스크린샷 예제
 (selenium, chrome dev tool, html2canvas, ...)
 
-* [java/README.md](https://github.com/yamoe/screenshot-example/tree/master/java)
-* [golang/sshot/README.md](https://github.com/yamoe/screenshot-example/tree/master/java)
-* [js/README.md](https://github.com/yamoe/screenshot-example/tree/master/js)
+* <a href="https://github.com/yamoe/screenshot-example/tree/master/java">java/README.md</a>
+* <a href="https://github.com/yamoe/screenshot-example/tree/master/golang/sshot">golang/sshot/README.md</a>
+* <a href="https://github.com/yamoe/screenshot-example/tree/master/js">js/README.md</a>
 
 ## 그 외
 
